@@ -31,7 +31,6 @@ const getDolar = () => {
       // Convertir la cadena de arreglo en un array de objetos JavaScript
       const arr = JSON.parse(arrString);
 
-      console.log('registerString', arr);
       setTimeout(() => {
           dispatch(addList(arr));
       }, 4000);

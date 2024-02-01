@@ -7,8 +7,7 @@ const ChartComponent = (data) => {
  
   // Creamos un nuevo objeto extrayendo los valores del arreglo original
 const nuevoObjeto = data.data.map(item => ({ time: item.date, value: Number(item.value) }));
-console.log('data',nuevoObjeto
-)
+
 
   useEffect(() => {
     const chart = createChart(chartContainerRef.current, {
